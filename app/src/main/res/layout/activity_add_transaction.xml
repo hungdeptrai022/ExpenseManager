@@ -1,0 +1,77 @@
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Balance Display -->
+    <TextView
+        android:id="@+id/tvAddSpent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create new spent"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
+
+    <!-- Transaction Amount Input -->
+    <EditText
+        android:id="@+id/et_transaction_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"/>
+
+    <!-- Date Input -->
+    <EditText
+        android:id="@+id/et_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:inputType="date"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Transaction Type Spinner -->
+
+        <EditText
+            android:id="@+id/edtDescription1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+        android:id="@+id/spinnerCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="15dp"
+        />
+
+    <!-- Confirm Button -->
+    <Button
+        android:id="@+id/btnAddTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"/>
+
+    <!-- Go Back Button -->
+    <Button
+        android:id="@+id/btnReturnFromAddSpend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/Return"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/black"/>
+</LinearLayout>

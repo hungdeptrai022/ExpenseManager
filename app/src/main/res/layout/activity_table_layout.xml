@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableRow
+    android:id="@+id/table_row_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_table_row"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_column="1"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/table_row_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_URL"
+            android:text="URL"
+            android:textStyle="bold"
+            android:textColor="#B90DD7"
+            android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/edit_URL"
+            android:textColor="#991414" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/table_row_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnSummit"
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnCancel"
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+
+</TableLayout>
